@@ -15,9 +15,11 @@ def bfs(graph, start):
     queue = deque([start])
     while queue:
         vertex = queue.popleft()
-        if vertex not in visited:
-            visited.append(vertex)
-            queue.extend([x for x in graph[vertex] if x not in visited])
-            #queue.extend(graph[vertex]-set(visited))
+        visited.append(vertex)
+        #queue.extend([x for x in graph[vertex] if x not in visited])
+        for x in graph[vertex]:
+            if x not in visited and x not in queue:
+                queue.extend(x)
+
     return visited
 main()

@@ -14,10 +14,11 @@ def dfsStack(graph, start):
     stack = [start]
     while stack:
         vertex = stack.pop()
-        if vertex not in visited:
-            visited.append(vertex)
-            stack.extend([x for x in graph[vertex] if x not in visited]) #sexy list comp preserves order
-            #stack.extend(graph[vertex]-set(visited))
+        visited.append(vertex)
+        #stack.extend([x for x in graph[vertex] if x not in visited and x not in stack]) #sexy list comp preserves order
+        for x in graph[vertex]:
+                    if x not in visited and x not in stack:
+                        stack.append(x)
     return visited
 
 def dfsRecursion(graph, start, visited=None):
