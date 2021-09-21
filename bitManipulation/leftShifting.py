@@ -5,7 +5,7 @@ numToDouble = 2
 print('Shifting iteratively on 2')
 for i in range(3):
 	
-	print('i << ' + str(i) + ' = ' + str(numToDouble << i))
+	print(str(numToDouble) + ' << ' + str(i) + ' = ' + str(numToDouble << i))
 		
 
 for i in range(3):
