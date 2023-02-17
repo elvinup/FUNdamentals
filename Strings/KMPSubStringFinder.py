@@ -1,5 +1,4 @@
 #This may be too tough to want to figure out for an interview, rather better you just know the concept itself and can explain if questioned about it
-, 
 def findFirstSubstringOccurrence(s, x):
     
     ##This is the KMP algorithm 
