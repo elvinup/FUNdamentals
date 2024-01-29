@@ -7,8 +7,8 @@ for i in range(3):
 	
 	print(str(numToDouble) + ' << ' + str(i) + ' = ' + str(numToDouble << i))
 		
-
+		
 for i in range(3):
-	numToDouble <<= i
+	numToDouble <<= 1
 	
 	print("Cumulative: " + str(numToDouble))

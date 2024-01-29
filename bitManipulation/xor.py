@@ -13,4 +13,3 @@ print("x ^= x >> 1 -> %s" % str(bin(x)))
 print(x & 0x1)
 #print(bin(x ^ (x >> 4)))
 #print(bin(x ^ (x >> 32)))
-
